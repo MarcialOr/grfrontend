@@ -23,10 +23,10 @@ export class HomePage {
     this._anunciosService.obtenerAnuncios().subscribe(data => {
       this.anuncios = data;
       console.log(this.anuncios);
-      if(event){
-
-      }
+      if(event){}
     });
   }
+
+  
 
 }
