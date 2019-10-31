@@ -6,11 +6,11 @@ import { Anuncio } from 'src/Models/Anuncio';
   providedIn: 'root'
 })
 export class AnunciosService {
-  apiUrl = "https://localhost:5001/api/anuncios"
+  apiUrl = 'https://localhost:5001/api/anuncio';
 
   constructor(private http: HttpClient) { }
 
-  obtenerAnuncios(){
+  obtenerAnuncios() {
     return this.http.get<Anuncio[]>(this.apiUrl);
   }
 }

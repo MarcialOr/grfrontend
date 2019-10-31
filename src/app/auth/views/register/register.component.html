@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Seleccione Un Tipo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item lines="none"> 
+    <ion-text>Selecciona El Tipo De Cuenta</ion-text>
+  </ion-item>
+  <ion-button class="Contratar" [routerLink]="['/accountRegister', '1']">Quiero Contratar</ion-button>
+  <ion-button class="Trabajar" [routerLink]="['/accountRegister', '2']">Quiero Trabajar</ion-button>
+</ion-content>

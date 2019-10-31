@@ -23,19 +23,19 @@
   </ion-card>
   <ion-list lines="none">
     <ion-list-header>
-      <ion-label>Personas</ion-label>
+      <ion-label>Tecnicos</ion-label>
     </ion-list-header>
     <ion-card  *ngFor="let anuncio of anuncios">
       <ion-card-header>
-        <ion-card-subtitle>{{anuncio.tecnicoid}}</ion-card-subtitle>
-        <ion-card-title>{{anuncio.mensaje}}</ion-card-title>
+        <ion-card-subtitle>{{anuncio.TecnicoId}}</ion-card-subtitle>
+        <ion-card-title>{{anuncio.Mensaje}}</ion-card-title>
       </ion-card-header>
 
       <ion-card-content>
         Keep close to Nature's heart... and break clear away, once in awhile,
         and climb a mountain or spend a week in the woods. Wash your spirit clean.
       </ion-card-content>
-      <ion-button href="/usuarios">Move to test page</ion-button>
+      <ion-button [routerLink]="['/usuarios']">Move to test page</ion-button>
     </ion-card>
   </ion-list>
 </ion-content>
