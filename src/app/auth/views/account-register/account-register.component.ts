@@ -11,6 +11,9 @@ export class AccountRegisterComponent implements OnInit {
   formGroupRegister: FormGroup;
   type: string;
 
+  passwordTypeInput  =  'password';
+  iconpassword  =  'eye-off';
+
   constructor(
     public formBuilder: FormBuilder,
     private route: ActivatedRoute,
@@ -21,5 +24,10 @@ export class AccountRegisterComponent implements OnInit {
    }
 
   ngOnInit() {}
+
+  togglePasswordMode() {
+    this.passwordTypeInput  =  this.passwordTypeInput  ===  'text'  ?  'password'  :  'text';
+    this.iconpassword  =  this.iconpassword  ===  'eye-off'  ?  'eye'  :  'eye-off';
+  }
 
 }

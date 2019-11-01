@@ -20,7 +20,8 @@ const routes: Routes = [
     path: 'usuarios',
     loadChildren: () => import ('./usuarios/usuarios.module').then(m => m.UsuariosPageModule) },
   // { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
-  { path: '', loadChildren: './auth/auth.module#AuthPageModule' }
+  { path: '', loadChildren: './auth/auth.module#AuthPageModule' },
+  { path: 'setting', loadChildren: './setting/setting.module#SettingPageModule' }
 ];
 
 @NgModule({

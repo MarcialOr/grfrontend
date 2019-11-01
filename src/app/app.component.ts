@@ -22,9 +22,9 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'Register',
-      url: '/register',
-      icon: 'ios-create'
+      title: 'Settings',
+      url: '/setting',
+      icon: 'cog'
     }
   ];
 

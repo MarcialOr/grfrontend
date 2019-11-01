@@ -25,11 +25,11 @@ const routes: Routes = [
         component: LoginComponent
       },
       {
-        path: 'register',
+        path: 'register/:type',
         component: RegisterComponent
       },
       {
-        path: 'accountRegister/:type',
+        path: 'accountRegister',
         component: AccountRegisterComponent
       }
     ]

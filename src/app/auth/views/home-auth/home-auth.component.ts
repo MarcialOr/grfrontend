@@ -17,6 +17,6 @@ export class HomeAuthComponent implements OnInit {
   }
 
   goRegisterOptionsScreen() {
-    this.router.navigate(['register']);
+    this.router.navigate(['accountRegister']);
   }
 }
